@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Europa Project</title>
     <style>
- 
         body{
             min-height: 100vh;
             display: flex;
@@ -16,7 +15,7 @@
             margin: 0;
             font-family: 'Trebuchet MS' sans-serif;
             font-size: 18px;
-            background: linear-gradient(purple, blue);
+            background: linear-gradient(rgb(180, 0, 252), rgb(255, 137, 249));
         }
         
         
@@ -39,7 +38,7 @@
             border-radius: 50px;
             border: none;
             background-color: black;
-            color: white;
+            color: rgb(255, 255, 255);
             cursor: pointer;
             margin-top: 15px;
             transition: background-color 0.6s ease, transform  0.2s ease;
@@ -78,7 +77,7 @@
         }
         input:focus {
             border: 1px solid #090df3;
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(253, 249, 249, 0.8);
             box-shadow: 0 0 0 3px rgba(9, 196, 243, 0.3);
         }
         p{
@@ -87,7 +86,17 @@
             margin: 0px auto;
             font-size: 1.2em
         }
-
+        .result-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            background-color: rgba(25, 0, 255, 0.3);
+            font-size: 25px;
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 15px 25px;
+        }
     </style>
 </head>
 <body>
@@ -103,7 +112,9 @@
     </p>
     <button class = "button_calculation" id = "calculate_button" >Calculate IMC</button>
     </div>
-    <div id = "resultado" ></div>
+    <div class="result-container">
+        <div id = "resultado" ></div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
